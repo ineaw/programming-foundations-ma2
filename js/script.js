@@ -39,8 +39,10 @@ for (var i = 0; i < pets.length; i++) {
 // Declaring the function
 
 function flowerName(rose) {
-	var typeofFlower = typeof rose;
-	if (typeofFlower == Boolean) {
+	var flowerName = rose;
+	var typeofFlower = typeof(flowerName);
+	// string
+	if (flowerName == Boolean) {
 	return true;
 	} else {
 		return "Please pass a boolean value in";
@@ -48,8 +50,7 @@ function flowerName(rose) {
 }
 
 // call the function
-var result = flowerName("rose");
-
+var result = flowerName(true);
 console.log(result);
 
 
