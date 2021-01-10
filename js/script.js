@@ -38,15 +38,17 @@ for (var i = 0; i < pets.length; i++) {
 // Answer
 // Declaring the function
 
-function logName(theWord) {
-	var typeofName = typeof theWord;
-// checking the value
-	if (typeofName !== Boolean)
-	return "Please pass a boolean value in";
+function flowerName(rose) {
+	var typeofFlower = typeof rose;
+	if (typeofFlower == Boolean) {
+	return true;
+	} else {
+		return "Please pass a boolean value in";
+	}
 }
 
 // call the function
-var result = logName ("theWord");
+var result = flowerName("rose");
 
 console.log(result);
 
@@ -57,7 +59,7 @@ console.log(result);
 
 
 // Answer
-// Declare
+// Declaring the function
 
  var subHeading = document.querySelector("h2");
  var button = document.querySelector("button");
